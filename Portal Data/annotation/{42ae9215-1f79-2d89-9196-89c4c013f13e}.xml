@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Entity xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">
+  <Attributes xmlns:d2p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>annotationid</d2p1:key>
+      <d2p1:value xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/" i:type="d4p1:guid">42ae9215-1f79-2d89-9196-89c4c013f13e</d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>createdby</d2p1:key>
+      <d2p1:value i:type="EntityReference">
+        <Id>3f1018a6-d138-ee11-bdf5-000d3a540b1c</Id>
+        <KeyAttributes xmlns:d5p1="http://schemas.microsoft.com/xrm/7.1/Contracts" />
+        <LogicalName>systemuser</LogicalName>
+        <Name>System Administrator</Name>
+        <RowVersion i:nil="true" />
+      </d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>createdon</d2p1:key>
+      <d2p1:value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2023-08-26T20:14:49Z</d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>documentbody</d2p1:key>
+      <d2p1:value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">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</d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>filename</d2p1:key>
+      <d2p1:value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">language.PNG</d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>filesize</d2p1:key>
+      <d2p1:value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:int">8990</d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>isdocument</d2p1:key>
+      <d2p1:value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">true</d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>mimetype</d2p1:key>
+      <d2p1:value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">image/png</d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>modifiedby</d2p1:key>
+      <d2p1:value i:type="EntityReference">
+        <Id>3f1018a6-d138-ee11-bdf5-000d3a540b1c</Id>
+        <KeyAttributes xmlns:d5p1="http://schemas.microsoft.com/xrm/7.1/Contracts" />
+        <LogicalName>systemuser</LogicalName>
+        <Name>System Administrator</Name>
+        <RowVersion i:nil="true" />
+      </d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>modifiedon</d2p1:key>
+      <d2p1:value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:dateTime">2023-08-26T20:14:49Z</d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>objectid</d2p1:key>
+      <d2p1:value i:type="EntityReference">
+        <Id>f8c1fae9-4c44-ee11-bdf3-0022482f2b26</Id>
+        <KeyAttributes xmlns:d5p1="http://schemas.microsoft.com/xrm/7.1/Contracts" />
+        <LogicalName>adx_webfile</LogicalName>
+        <Name i:nil="true" />
+        <RowVersion i:nil="true" />
+      </d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>objecttypecode</d2p1:key>
+      <d2p1:value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">adx_webfile</d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>ownerid</d2p1:key>
+      <d2p1:value i:type="EntityReference">
+        <Id>3f1018a6-d138-ee11-bdf5-000d3a540b1c</Id>
+        <KeyAttributes xmlns:d5p1="http://schemas.microsoft.com/xrm/7.1/Contracts" />
+        <LogicalName>systemuser</LogicalName>
+        <Name>System Administrator</Name>
+        <RowVersion i:nil="true" />
+      </d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>owningbusinessunit</d2p1:key>
+      <d2p1:value i:type="EntityReference">
+        <Id>bebd1fa0-d138-ee11-bdf5-000d3a540b1c</Id>
+        <KeyAttributes xmlns:d5p1="http://schemas.microsoft.com/xrm/7.1/Contracts" />
+        <LogicalName>businessunit</LogicalName>
+        <Name>orged1d1970</Name>
+        <RowVersion i:nil="true" />
+      </d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>owninguser</d2p1:key>
+      <d2p1:value i:type="EntityReference">
+        <Id>3f1018a6-d138-ee11-bdf5-000d3a540b1c</Id>
+        <KeyAttributes xmlns:d5p1="http://schemas.microsoft.com/xrm/7.1/Contracts" />
+        <LogicalName>systemuser</LogicalName>
+        <Name i:nil="true" />
+        <RowVersion i:nil="true" />
+      </d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>webfile.adx_name</d2p1:key>
+      <d2p1:value i:type="AliasedValue">
+        <AttributeLogicalName>adx_name</AttributeLogicalName>
+        <EntityLogicalName>adx_webfile</EntityLogicalName>
+        <NeedFormatting>true</NeedFormatting>
+        <ReturnType>16</ReturnType>
+        <Value xmlns:d5p1="http://www.w3.org/2001/XMLSchema" i:type="d5p1:string">language.png</Value>
+      </d2p1:value>
+    </KeyValuePairOfstringanyType>
+  </Attributes>
+  <EntityState i:nil="true" />
+  <FormattedValues xmlns:d2p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+    <KeyValuePairOfstringstring>
+      <d2p1:key>owningbusinessunit</d2p1:key>
+      <d2p1:value>orged1d1970</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>isdocument</d2p1:key>
+      <d2p1:value>Yes</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>createdby</d2p1:key>
+      <d2p1:value>System Administrator</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>objecttypecode</d2p1:key>
+      <d2p1:value>Web File</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>filesize</d2p1:key>
+      <d2p1:value>8,990</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>ownerid</d2p1:key>
+      <d2p1:value>System Administrator</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>modifiedby</d2p1:key>
+      <d2p1:value>System Administrator</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>createdon</d2p1:key>
+      <d2p1:value>8/26/2023 8:14 PM</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>modifiedon</d2p1:key>
+      <d2p1:value>8/26/2023 8:14 PM</d2p1:value>
+    </KeyValuePairOfstringstring>
+  </FormattedValues>
+  <Id>42ae9215-1f79-2d89-9196-89c4c013f13e</Id>
+  <KeyAttributes xmlns:d2p1="http://schemas.microsoft.com/xrm/7.1/Contracts" xmlns:d2p2="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+  <LogicalName>annotation</LogicalName>
+  <RelatedEntities xmlns:d2p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+  <RowVersion>6829457</RowVersion>
+</Entity>

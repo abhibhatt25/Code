@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Entity xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">
+  <Attributes xmlns:d2p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_alloworigin</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_cloudblobaddress</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_contentdisposition</d2p1:key>
+      <d2p1:value i:type="OptionSetValue">
+        <Value>756150000</Value>
+      </d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_createdbyipaddress</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_createdbyusername</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_displaydate</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_displayorder</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_enabletracking</d2p1:key>
+      <d2p1:value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">false</d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_excludefromsearch</d2p1:key>
+      <d2p1:value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">false</d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_expirationdate</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_hiddenfromsitemap</d2p1:key>
+      <d2p1:value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">false</d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_masterwebfileid</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_migratedtofilecontent</d2p1:key>
+      <d2p1:value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:boolean">false</d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_modifiedbyipaddress</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_modifiedbyusername</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_name</d2p1:key>
+      <d2p1:value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Fidget-spinner.gif</d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_parentpageid</d2p1:key>
+      <d2p1:value i:type="EntityReference">
+        <Id>70b41ea0-6442-ee11-bdf4-0022482f2b26</Id>
+        <KeyAttributes xmlns:d5p1="http://schemas.microsoft.com/xrm/7.1/Contracts" />
+        <LogicalName>adx_webpage</LogicalName>
+        <Name>Home</Name>
+        <RowVersion i:nil="true" />
+      </d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_partialurl</d2p1:key>
+      <d2p1:value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Fidget-spinner.gif</d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_publishingstateid</d2p1:key>
+      <d2p1:value i:type="EntityReference">
+        <Id>0cb41ea0-6442-ee11-bdf4-0022482f2b26</Id>
+        <KeyAttributes xmlns:d5p1="http://schemas.microsoft.com/xrm/7.1/Contracts" />
+        <LogicalName>adx_publishingstate</LogicalName>
+        <Name>Published</Name>
+        <RowVersion i:nil="true" />
+      </d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_releasedate</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_subjectid</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_summary</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_title</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_webfileid</d2p1:key>
+      <d2p1:value xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/" i:type="d4p1:guid">23ba19a3-b849-ee11-be6d-0022482f2b26</d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_websiteid</d2p1:key>
+      <d2p1:value i:type="EntityReference">
+        <Id>cab41ea0-6442-ee11-bdf4-0022482f2b26</Id>
+        <KeyAttributes xmlns:d5p1="http://schemas.microsoft.com/xrm/7.1/Contracts" />
+        <LogicalName>adx_website</LogicalName>
+        <Name>Translate Text - hackathon2023</Name>
+        <RowVersion i:nil="true" />
+      </d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>importsequencenumber</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>overriddencreatedon</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>ownerid</d2p1:key>
+      <d2p1:value i:type="EntityReference">
+        <Id>3f1018a6-d138-ee11-bdf5-000d3a540b1c</Id>
+        <KeyAttributes xmlns:d5p1="http://schemas.microsoft.com/xrm/7.1/Contracts" />
+        <LogicalName>systemuser</LogicalName>
+        <Name>System Administrator</Name>
+        <RowVersion i:nil="true" />
+      </d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>owneridtype</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>statecode</d2p1:key>
+      <d2p1:value i:type="OptionSetValue">
+        <Value>0</Value>
+      </d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>statuscode</d2p1:key>
+      <d2p1:value i:type="OptionSetValue">
+        <Value>1</Value>
+      </d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>timezoneruleversionnumber</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>utcconversiontimezonecode</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+  </Attributes>
+  <EntityState i:nil="true" />
+  <FormattedValues xmlns:d2p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+    <KeyValuePairOfstringstring>
+      <d2p1:key>statecode</d2p1:key>
+      <d2p1:value>Active</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>adx_parentpageid</d2p1:key>
+      <d2p1:value>Home</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>statuscode</d2p1:key>
+      <d2p1:value>Active</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>adx_websiteid</d2p1:key>
+      <d2p1:value>Translate Text - hackathon2023</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>adx_publishingstateid</d2p1:key>
+      <d2p1:value>Published</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>adx_excludefromsearch</d2p1:key>
+      <d2p1:value>No</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>createdon</d2p1:key>
+      <d2p1:value>9/2/2023 5:46 PM</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>adx_enabletracking</d2p1:key>
+      <d2p1:value>No</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>ownerid</d2p1:key>
+      <d2p1:value>System Administrator</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>modifiedon</d2p1:key>
+      <d2p1:value>9/2/2023 5:46 PM</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>adx_hiddenfromsitemap</d2p1:key>
+      <d2p1:value>No</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>modifiedby</d2p1:key>
+      <d2p1:value>System Administrator</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>adx_migratedtofilecontent</d2p1:key>
+      <d2p1:value>No</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>adx_contentdisposition</d2p1:key>
+      <d2p1:value>inline</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>createdby</d2p1:key>
+      <d2p1:value>System Administrator</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>owningbusinessunit</d2p1:key>
+      <d2p1:value>orged1d1970</d2p1:value>
+    </KeyValuePairOfstringstring>
+  </FormattedValues>
+  <Id>23ba19a3-b849-ee11-be6d-0022482f2b26</Id>
+  <KeyAttributes xmlns:d2p1="http://schemas.microsoft.com/xrm/7.1/Contracts" xmlns:d2p2="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+  <LogicalName>adx_webfile</LogicalName>
+  <RelatedEntities xmlns:d2p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+  <RowVersion>7136596</RowVersion>
+</Entity>

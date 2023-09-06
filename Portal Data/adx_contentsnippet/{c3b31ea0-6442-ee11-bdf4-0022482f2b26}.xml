@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Entity xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/xrm/2011/Contracts">
+  <Attributes xmlns:d2p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_contentsnippetid</d2p1:key>
+      <d2p1:value xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/" i:type="d4p1:guid">c3b31ea0-6442-ee11-bdf4-0022482f2b26</d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_contentsnippetlanguageid</d2p1:key>
+      <d2p1:value i:type="EntityReference">
+        <Id>fab41ea0-6442-ee11-bdf4-0022482f2b26</Id>
+        <KeyAttributes xmlns:d5p1="http://schemas.microsoft.com/xrm/7.1/Contracts" />
+        <LogicalName>adx_websitelanguage</LogicalName>
+        <Name>English</Name>
+        <RowVersion i:nil="true" />
+      </d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_createdbyipaddress</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_createdbyusername</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_display_name</d2p1:key>
+      <d2p1:value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Mobile Header</d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_modifiedbyipaddress</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_modifiedbyusername</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_name</d2p1:key>
+      <d2p1:value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">Mobile Header</d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_type</d2p1:key>
+      <d2p1:value i:type="OptionSetValue">
+        <Value>756150001</Value>
+      </d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_value</d2p1:key>
+      <d2p1:value xmlns:d4p1="http://www.w3.org/2001/XMLSchema" i:type="d4p1:string">&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://code.jquery.com/jquery-3.6.0.min.js"&gt;&lt;/script&gt;
+&lt;img src="/language.png" alt-text ="Select Language" style="width: auto; height: 32px;"&gt;
+&lt;select name="lang" id="language" style="color: black;font-size: 12px;" &gt;
+    &lt;option value="0" selected&gt;Language&lt;/option&gt;
+    &lt;option value="1"&gt;Hindi&lt;/option&gt;
+    &lt;option value="2"&gt;Bengali&lt;/option&gt;
+    &lt;option value="3"&gt;Tamil&lt;/option&gt;
+    &lt;option value="4"&gt;Telegu&lt;/option&gt;
+    &lt;option value="5"&gt;Kannada&lt;/option&gt;
+    &lt;option value="6"&gt;Malyalam&lt;/option&gt;
+  &lt;/select&gt;
+&lt;script&gt;
+$('select[name="lang"]').change(function(){
+
+debugger;
+showloader();
+var languageid = $("#language").val();
+if (languageid !="0")
+{
+
+// Get all the paragraphs and headers on the page
+var elements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6,span,a');
+var textarray = []
+for (var i = 0; i &lt; elements.length; i++) {
+  // Get the English text
+ if($.trim(elements[i].textContent) != "")
+{
+ textarray.push(elements[i].textContent);
+}
+}
+
+
+var flowUrl = 'https://prod-147.westus.logic.azure.com:443/workflows/c4aaf16454bd4597bbd94b8ca8c18848/triggers/manual/paths/invoke?api-version=2016-06-01&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=FgsoUjEAZ9x832LsY_1jRS2DOP0EOodwaWXw-6Qp3ok';
+//var flowUrl = 'https://prod-185.westus.logic.azure.com:443/workflows/7f749c8f2f8c4b47b551cca026e34e0c/triggers/manual/paths/invoke?api-version=2016-06-01&amp;sp=%2Ftriggers%2Fmanual%2Frun&amp;sv=1.0&amp;sig=e6iO_azlApcUxbhaKzr6HsRE6Gea73YoI2zS3LNO_AA';
+  var input = JSON.stringify({
+    "Language": parseInt(languageid),
+    "Selected Object": textarray
+  });
+
+// Make a synchronous API request
+  $.ajax({
+    url: flowUrl,
+    type: 'POST',
+    contentType: 'application/json',
+    data: input,
+    async: true,
+    success: function(response) {
+     
+      // Get the Hindi translation from the API response
+      var htmlObject = response;
+      
+      for (var i = 0; i &lt; elements.length; i++) {
+          for (var j = 0; j &lt; response.length; j++) {
+             
+            if (elements[i].textContent == response[j].text) {
+      // If there's a match, assign the corresponding uppercase value to the element
+              elements[i].textContent = response[j].convertedText;
+              break;
+            }
+             
+                }
+            }
+
+      // Update the element with the Hindi text
+      //elements[i].textContent = languageText;
+    $.unblockUI();
+    }
+       
+  });
+
+  
+
+
+// Loop through each element
+
+}
+});
+function showloader()
+{
+    $.blockUI({ message: '&lt;div id="loader" class="waitMessage"&gt;' + "Please Wait  " + '&lt;img src="/Fidget-spinner.gif" /&gt;&lt;/div&gt;' });
+}
+
+    
+//$("#language").on("change", changelanguage($("#language").val()));
+&lt;/script&gt;
+
+&lt;style&gt;
+    .blockUI.blockMsg.blockPage {
+    left: 10% !important;
+    width: 80% !important;
+  }
+
+   .blockMsg .waitMessage {
+  padding: 25px;
+  font-size: 25px;
+}
+
+&lt;/style&gt;
+
+</d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>adx_websiteid</d2p1:key>
+      <d2p1:value i:type="EntityReference">
+        <Id>cab41ea0-6442-ee11-bdf4-0022482f2b26</Id>
+        <KeyAttributes xmlns:d5p1="http://schemas.microsoft.com/xrm/7.1/Contracts" />
+        <LogicalName>adx_website</LogicalName>
+        <Name>Translate Text - hackathon2023</Name>
+        <RowVersion i:nil="true" />
+      </d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>importsequencenumber</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>overriddencreatedon</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>ownerid</d2p1:key>
+      <d2p1:value i:type="EntityReference">
+        <Id>3f1018a6-d138-ee11-bdf5-000d3a540b1c</Id>
+        <KeyAttributes xmlns:d5p1="http://schemas.microsoft.com/xrm/7.1/Contracts" />
+        <LogicalName>systemuser</LogicalName>
+        <Name>System Administrator</Name>
+        <RowVersion i:nil="true" />
+      </d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>owneridtype</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>statecode</d2p1:key>
+      <d2p1:value i:type="OptionSetValue">
+        <Value>0</Value>
+      </d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>statuscode</d2p1:key>
+      <d2p1:value i:type="OptionSetValue">
+        <Value>1</Value>
+      </d2p1:value>
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>timezoneruleversionnumber</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+    <KeyValuePairOfstringanyType>
+      <d2p1:key>utcconversiontimezonecode</d2p1:key>
+      <d2p1:value i:nil="true" />
+    </KeyValuePairOfstringanyType>
+  </Attributes>
+  <EntityState i:nil="true" />
+  <FormattedValues xmlns:d2p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic">
+    <KeyValuePairOfstringstring>
+      <d2p1:key>adx_websiteid</d2p1:key>
+      <d2p1:value>Translate Text - hackathon2023</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>owningbusinessunit</d2p1:key>
+      <d2p1:value>orged1d1970</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>modifiedon</d2p1:key>
+      <d2p1:value>9/2/2023 5:55 PM</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>statecode</d2p1:key>
+      <d2p1:value>Active</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>statuscode</d2p1:key>
+      <d2p1:value>Active</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>adx_contentsnippetlanguageid</d2p1:key>
+      <d2p1:value>English</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>createdby</d2p1:key>
+      <d2p1:value>System Administrator</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>adx_type</d2p1:key>
+      <d2p1:value>HTML</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>ownerid</d2p1:key>
+      <d2p1:value>System Administrator</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>modifiedby</d2p1:key>
+      <d2p1:value>System Administrator</d2p1:value>
+    </KeyValuePairOfstringstring>
+    <KeyValuePairOfstringstring>
+      <d2p1:key>createdon</d2p1:key>
+      <d2p1:value>8/24/2023 9:57 AM</d2p1:value>
+    </KeyValuePairOfstringstring>
+  </FormattedValues>
+  <Id>c3b31ea0-6442-ee11-bdf4-0022482f2b26</Id>
+  <KeyAttributes xmlns:d2p1="http://schemas.microsoft.com/xrm/7.1/Contracts" xmlns:d2p2="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+  <LogicalName>adx_contentsnippet</LogicalName>
+  <RelatedEntities xmlns:d2p1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+  <RowVersion>7136823</RowVersion>
+</Entity>
